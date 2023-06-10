@@ -20,5 +20,7 @@ Console.WriteLine("Maximum number " + max);
 Console.WriteLine("Minimum number " + min);
 
 if (a == b)
+{
 Console.Write("Entered numbers equal " + max);
 Console.WriteLine(" = " + min);
+}

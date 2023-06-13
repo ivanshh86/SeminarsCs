@@ -1,4 +1,7 @@
-﻿int Line(){
+﻿// Напишите программу, которая выводит случайное число из отрезка [10, 99] и показывает наибольшую цифру числа.
+
+
+int Line(){
     int num = new Random().Next(10, 100);
     Console.WriteLine("Your num is " + num);    
     int dec = num / 10;

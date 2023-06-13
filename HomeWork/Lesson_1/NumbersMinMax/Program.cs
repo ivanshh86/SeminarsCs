@@ -6,13 +6,13 @@ int b = Convert.ToInt32(Console.ReadLine());
 
 int max, min;
 
-if (a > b) 
+if (a > b)
 {
     max = a;
     min = b;
 }
-    else
-{   
+else
+{
     max = b;
     min = a;
 }
@@ -21,6 +21,6 @@ Console.WriteLine("Minimum number " + min);
 
 if (a == b)
 {
-Console.Write("Entered numbers equal " + max);
-Console.WriteLine(" = " + min);
+    Console.Write("Entered numbers equal " + max);
+    Console.WriteLine(" = " + min);
 }

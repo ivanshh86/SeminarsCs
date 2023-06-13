@@ -8,17 +8,16 @@ void crat()
     Console.Write("Enter first number ");
     int first = Convert.ToInt32(Console.ReadLine());
 
-    Console.WriteLine("Enter second ");
+    Console.Write("Enter second ");
     int second = Convert.ToInt32(Console.ReadLine());
 
     if (second % first == 0)
-    
+
         Console.WriteLine("Второе кратно первому");
 
-        else
-            Console.WriteLine(second%first);
-        
+    else
 
-    }
-
+        Console.WriteLine("Остаток от деления " + second % first);
+}
 crat();
+

@@ -3,19 +3,15 @@
 void crat()
 {
     Console.Write("Enter first number ");
-    int first = Convert.ToInt32(Console.ReadLine());
-    int result = 0;
+    int num1 = Convert.ToInt32(Console.ReadLine());
 
-    if  (result = (num1 % 7 == 0 && num1 % 23 == 0)   
-{       
-
-
-        Console.WriteLine("Второе кратно первому");
-
+    if (num1 % 7 == 0 && num1 % 23 == 0)
+    {
+        Console.WriteLine("Число кратно 7 и 23");
+    }
     else
-        Console.WriteLine(second % first);
-
-
-}
+    {
+        Console.WriteLine("Число не кратно 7 и 23");
+    }
 }
 crat();

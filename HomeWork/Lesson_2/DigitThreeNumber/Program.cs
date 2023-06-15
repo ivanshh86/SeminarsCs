@@ -2,9 +2,11 @@
 
 void Line()
 {
-    int num = new Random().Next(0, 100000);
+    int num = new Random().Next(-99999, 100000);
     Console.WriteLine("You number is " + num);
     int threeDig = 0;
+
+    if (num < 0) num *= -1;
 
     int i = num;
     int dig = 0;

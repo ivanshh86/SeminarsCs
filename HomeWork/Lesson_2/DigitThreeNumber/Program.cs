@@ -14,13 +14,11 @@ void Line()
     {
         i = i / 10;
     }
-    //      Console.WriteLine("Digits of number = " + dig);
+    //      Console.WriteLine("Digits of number = " + dig);         // Промежуточная проверка
 
-    if (dig == 1 || dig == 2 || dig == 0)
-    {
-        Console.WriteLine("No third digit!");
-    }
-    if (dig == 3)
+    if (dig == 1 || dig == 2 || dig == 0) Console.WriteLine("No third digit!");
+
+    if (dig == 3) 
     {
         threeDig = num % 10;
         Console.WriteLine("Third digit in number " + threeDig);

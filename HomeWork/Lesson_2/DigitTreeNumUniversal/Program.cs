@@ -16,12 +16,12 @@ void Line()
         dig++;
     }
 
-    if (dig == 1 || dig == 2 || dig == 0) Console.WriteLine("No third digit!");
+    if (dig = 1 || dig = 2) Console.WriteLine("No third digit!");
 
     while (dig != 3)
     {
         num /= 10;
-        dig -= 1;
+        dig --;
     }
     num %= 10;
     Console.WriteLine("Thirt digit in number " + num);

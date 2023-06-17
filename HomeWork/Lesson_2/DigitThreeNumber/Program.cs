@@ -16,7 +16,7 @@ void Line()
     }
     //      Console.WriteLine("Digits of number = " + dig);         // Промежуточная проверка
 
-    if (dig == 1 || dig == 2 || dig == 0) Console.WriteLine("No third digit!");
+    if (dig == 1 || dig == 2) Console.WriteLine("No third digit!");
 
     if (dig == 3)
     {

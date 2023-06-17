@@ -16,7 +16,7 @@ void Line()
         dig++;
     }
 
-    if (dig = 1 || dig = 2) Console.WriteLine("No third digit!");
+    if (dig == 1 || dig == 2) Console.WriteLine("No third digit!");
 
     while (dig != 3)
     {

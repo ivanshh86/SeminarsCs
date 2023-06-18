@@ -9,22 +9,22 @@
 
 double LongLineAB(int xA, int xB, int yA, int yB)
 {
-    double longLine = Match.Sqrt((xB - xA)*(xB - xA) + (yB - yA) * (yA - yB);
-    longLine = Match.Round(longLine, 2);
+    double longLine = Math.Sqrt((xB - xA)*(xB - xA) + (yB - yA) * (yB - yA));
+    longLine = Math.Round(longLine, 2);
     return longLine;
 }
 
 Console.WriteLine("Input X of A ");
-int xCoordA - Convert.ToInt32(Console.ReadLine());
+int xCoordA = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Input Y of A ");
-int yCoordA - Convert.ToInt32(Console.ReadLine());
+int yCoordA = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Input X of B ");
-int xCoordB - Convert.ToInt32(Console.ReadLine());
+int xCoordB = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Input Y of B ");
-int yCoordB - Convert.ToInt32(Console.ReadLine());
+int yCoordB = Convert.ToInt32(Console.ReadLine());
 
 double dist = LongLineAB(xCoordA, xCoordB, yCoordA, yCoordB);
 Console.WriteLine($"Distance between A({xCoordA},{yCoordA}) and B({xCoordB},{yCoordB}) is {dist}");

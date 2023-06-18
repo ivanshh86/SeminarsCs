@@ -9,7 +9,6 @@ void CubeNumN(int numN)
         Console.Write($"{cub:f0}, ");           // флаг fx количество (x) символов после запятой        
         current++;
     }
-
 }
 
 void CubeNumNNeg(int numN)

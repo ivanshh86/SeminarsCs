@@ -1,8 +1,4 @@
-﻿using System;
-using System.Text.RegularExpressions;
-// Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
-
-
+﻿// Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 
 double LenghtSegment (int xA, int yA, int zA, int xB, int yB, int zB)
 {
@@ -31,5 +27,3 @@ int coordZB = Convert.ToInt32(Console.ReadLine());
 
 double lenght = LenghtSegment(coordXA, coordYA, coordZA, coordXB, coordYB, coordZB);
 Console.WriteLine($"Distance beetwin points A ({coordXA}, {coordYA}, {coordZA}) and B ({coordXB}, {coordYB}, {coordZB}) is {lenght}");
-
-

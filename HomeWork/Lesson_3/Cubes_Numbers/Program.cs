@@ -5,7 +5,7 @@ void CubeNumN(int numN)
     int current = 1;
     while (current <= numN)
     {
-        double cub = numN * numN * numN;
+        double cub = Math.Pow(current, 3);
         Console.Write($"{cub:f0}, ");           // флаг fx количество (x) символов после запятой        
         current++;
     }
@@ -17,7 +17,7 @@ void CubeNumNNeg(int numN)
     int current = 1;
     while (current >= numN)
     {
-        double cub = Math.Pow(numN, 3);
+        double cub = Math.Pow(current, 3);
         Console.Write(cub + ", ");
         current--;
     }

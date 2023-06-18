@@ -2,9 +2,10 @@
 
 double LenghtSegment (int xA, int yA, int zA, int xB, int yB, int zB)
 {
-    double lenghtSeg = Math.Sqrt(xB-xA)*(xB-xA)+(yB-yA)*(yB-yA)+(zB-zA)*(zB-zA);
-    lenghtSeg = Math.Round(lenghtSeg, 2);
-    return lenghtSeg;
+    // double lenghtSeg = Math.Sqrt((xB-xA)*(xB-xA)+(yB-yA)*(yB-yA)+(zB-zA)*(zB-zA));
+    // lenghtSeg = Math.Round(lenghtSeg, 2);
+    // return lenghtSeg;
+    return Math.Round(Math.Sqrt((xB-xA)*(xB-xA)+(yB-yA)*(yB-yA)+(zB-zA)*(zB-zA)), 2);
 }
 
 Console.WriteLine("Enter coordinate x point A");

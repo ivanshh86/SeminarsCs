@@ -9,7 +9,7 @@
 
 double LongLineAB(int xA, int xB, int yA, int yB)
 {
-    double longLine = Match.Sqrt((xB - xA)8(xB - xA) + (yB - yA) * (yA - yB);
+    double longLine = Match.Sqrt((xB - xA)*(xB - xA) + (yB - yA) * (yA - yB);
     longLine = Match.Round(longLine, 2);
     return longLine;
 }

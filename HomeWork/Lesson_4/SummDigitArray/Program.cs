@@ -23,6 +23,7 @@ int SumNumbers(int[] numPrint)
 
 Console.WriteLine("Введите число ");
 int userN = Convert.ToInt32(Console.ReadLine());
+if (userN < 0) userN *= -1;
 int[] userArray = NumberArray(userN);
 int summ = SumNumbers(userArray);
 Console.WriteLine($"Сумма цифр {userN} равна {summ}.");

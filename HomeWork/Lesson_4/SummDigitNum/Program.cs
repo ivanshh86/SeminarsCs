@@ -14,5 +14,5 @@ return summ;
 Console.WriteLine("Введите число ");
 int userN = Convert.ToInt32(Console.ReadLine());
 if (userN < 0) userN *= -1;
-Number(userN);
-Console.WriteLine($"Сумма цифр {userN} равна " + Number(userN));
+int summ = Number(userN);
+Console.WriteLine($"Сумма цифр {userN} равна {summ}.");

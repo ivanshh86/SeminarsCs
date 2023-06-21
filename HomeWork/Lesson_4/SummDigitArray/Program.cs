@@ -3,28 +3,27 @@
 int[] NumberArray(int number)
 {
     string num = number.ToString();
-    int[] numbers = new int[number.ToString().Length];
+    int[] numbers = new int[num.Length];
     for (int i = 0; i < numbers.Length; i++)
     {
-        numbers[i] = Convert.ToInt32(number.ToString().Substring(i, 1));
+        numbers[i] = Convert.ToInt32(num.Substring(i, 1));
     }
     return numbers;
 }
 
-void PrintArray (int[] numPrint)
+int SumNumbers(int[] numPrint)
 {
-Console.WriteLine("array ");
-for (int i = 0; i < numPrint.Length; i++)
-Console.Write(numPrint[i] + ", ");
-
+    int sumNum = 0;
+    for (int i = 0; i < numPrint.Length; i++)
+    {
+        sumNum += numPrint[i];
+    }
+    return sumNum;    
 }
-
 
 Console.WriteLine("Введите число ");
 int userN = Convert.ToInt32(Console.ReadLine());
 int[] userArray = NumberArray(userN);
-PrintArray(userArray);
-
-
-
+int summ = SumNumbers(userArray);
+Console.WriteLine($"Сумма цифр {userN} равна {summ}.");
 

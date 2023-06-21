@@ -15,9 +15,9 @@ int[] CreateNewArray(int size_array)
 void PrintArray(int[] array_to_print)
 {
     Console.WriteLine("You array ");
-    for (int i = 0; i<array_to_print.Length; i++)
+    for (int i = 0; i < array_to_print.Length; i++)
         Console.Write(array_to_print[i] + " ");
-        Console.WriteLine();
+    Console.WriteLine();
 }
 
 

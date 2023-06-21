@@ -1,4 +1,6 @@
-﻿int Number(int num)
+﻿// Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+
+int Number(int num)
 {    
     int summ = 0;
     while (num != 0)

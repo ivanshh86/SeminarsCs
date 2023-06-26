@@ -29,7 +29,7 @@ int InvertArray(int[] invArray)
     return invArray;
 }
 
-int[] massiv = IRandomArray();
+int[] massiv = RandomArray();
 PrintArray(massiv);
 int[] invArray = InvertArray(massiv);
 PrintArray(invArray);

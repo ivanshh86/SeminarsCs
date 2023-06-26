@@ -36,7 +36,7 @@ for (int i = 0; i < countArray.Length; i++)
  if (countArray[i]>=10 && countArray[i]<=99)
  count++;   
 }
-Console.Write($"-> {count}");
+Console.Write($"Kоличество элементов массива, значения которых лежат в отрезке [10,99]-> {count}");
 }
 int[] randomArray = RandomArray();
 PrintArray(randomArray);

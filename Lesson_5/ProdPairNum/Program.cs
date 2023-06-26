@@ -26,20 +26,19 @@ void PrintArray(int[] arrayPrint)
 
 
 int[] startArray = RandomArray();
-
 int size = startArray.Length;
 
-int [] MultyArray(int[] startArray);
+int[] MultyArray(int[] startArray)
 {
-if(startArray.Length % 2 == 0)
-temp
-
-int[] temp = new int[size / 2 + 1];
-for (int i = 0; i < sizeof/ 2; i++)
-{
-    temp[i] = startArray[i] * startArray[startArray.Lengs - i - 1];
-}
-return temp
+    int[] temp;
+    if (startArray.Length % 2 == 0) temp = new int[size / 2];
+    else
+    {
+        temp = new int[size / 2 + 1];
+        temp[size / 2] = startArray[size / 2];
+    }
+    for (int i = 0; i < size/ 2; i++) temp[i] = startArray[i] * startArray[startArray.Length - i - 1];
+    return temp;
 }
 
 PrintArray(startArray);

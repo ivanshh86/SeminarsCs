@@ -22,7 +22,7 @@ void PrintArray(int[] arrayPrint)
     Console.WriteLine();
 }
 
-int InvertArray(int[] invArray)
+int[] InvertArray(int[] invArray)
 {
     for (int i = 0; i < invArray.Length; i++)
         invArray[i] = invArray[i] * (-1); // invArray[i] *= -1;

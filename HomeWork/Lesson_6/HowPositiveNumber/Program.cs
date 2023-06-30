@@ -1,11 +1,10 @@
 ﻿// Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
 
-int[] CreateArray(int numM)
+int[] CreateArray(int size)
 {
-    int size = numM;
     int[] numArray = new int[size];
     for (int i = 0; i < size; i++)
-        numArray[i] = new Random().Next(0, 2147483647);
+        numArray[i] = new Random().Next(-2147483648, 2147483647);
     return numArray;
 }
 
@@ -21,14 +20,16 @@ void PrintArray(int[] array)
     Console.WriteLine();
 }
 
-void CountPosNum(int[] array)
+void PrintCountPosNum(int[] array)
 {
     int countNum = 0;
     for (int i = 0; i < array.Length; i++)
         if (array[i] > 0) countNum++;
 
-    if (countNum >= 11 && countNum <= 19 || countNum % 10 == 5 || countNum % 10 == 6 || countNum % 10 == 7 ||
-        countNum % 10 == 8 || countNum % 10 == 9 || countNum % 10 == 0)
+    if (countNum >= 11 && countNum <= 19
+        || countNum % 10 == 5 || countNum % 10 == 6
+        || countNum % 10 == 7 || countNum % 10 == 8
+        || countNum % 10 == 9 || countNum % 10 == 0)
         Console.WriteLine($"{countNum} чисел больше нуля.");
 
     else if (countNum % 10 == 2 || countNum % 10 == 3 || countNum % 10 == 4)
@@ -36,10 +37,9 @@ void CountPosNum(int[] array)
 
     else if (countNum % 10 == 1)
         Console.WriteLine($"{countNum} число больше нуля.");
-
 }
 
-Console.WriteLine("Укажите размер массива");
+Console.Write("Укажите размер массива: ");
 string? sizeNum = Console.ReadLine();
 if (sizeNum == "" || sizeNum == " ")
 {
@@ -53,7 +53,7 @@ else
     {
         int[] userArray = CreateArray(sizeArray);
         PrintArray(userArray);
-        CountPosNum(userArray);
+        PrintCountPosNum(userArray);
     }
     else if (sizeArray == 0)
     {

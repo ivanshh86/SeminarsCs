@@ -7,7 +7,6 @@ int[] CreateArray(int size)
         numArray[i] = new Random().Next(-2147483648, 2147483647);
     return numArray;
 }
-
 void PrintArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -19,7 +18,6 @@ void PrintArray(int[] array)
     Console.WriteLine();
     Console.WriteLine();
 }
-
 void PrintCountPosNum(int[] array)
 {
     int countNum = 0;
@@ -38,7 +36,6 @@ void PrintCountPosNum(int[] array)
     else if (countNum % 10 == 1)
         Console.WriteLine($"{countNum} число больше нуля.");
 }
-
 Console.Write("Укажите размер массива: ");
 string? sizeNum = Console.ReadLine();
 if (sizeNum == "" || sizeNum == " ")

@@ -14,7 +14,6 @@ double[] CoordinatArray2(double b1, double k1, double b2, double k2)
     double[] coordArray = { x, y };
     return coordArray;
 }
-
 void PrintArray(double[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -26,7 +25,6 @@ void PrintArray(double[] array)
     Console.WriteLine();
     Console.WriteLine();
 }
-
 Console.Write($"Введите значение b1: ");
 double b1 = Convert.ToDouble(Console.ReadLine());
 Console.Write($"Введите значение k1: ");

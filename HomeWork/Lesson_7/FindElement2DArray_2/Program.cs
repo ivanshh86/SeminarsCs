@@ -3,8 +3,8 @@
 
 int[,] CreateArray2D(int minVal, int maxVal)
 {
-    int row = new Random().Next(5, 25);
-    int column = new Random().Next(5, 25);
+    int row = new Random().Next(15, 25);
+    int column = new Random().Next(15, 25);
 
     int[,] array2d = new int[row, column];
     for (int i = 0; i < row; i++)
@@ -33,22 +33,23 @@ void PrintArray(int[,] array)
     }
 }
 
-void FindElement(int[,] arrayFind, int findPosition)
+void FindElement(int[,] arrayFind, double findPosition)
 {
-    int i = findPosition / 10;
-    int j = findPosition % 10;
+    int i = (int)findPosition;
+    double k = (findPosition - i) * 10;
+    int j = (int)k;
     if (i >= arrayFind.GetLength(0) || j >= arrayFind.GetLength(1))
         Console.WriteLine($"Элемента с координатами ({i} {j}) несуществует");
     else
-        Console.WriteLine($"Элемент с координатами ({i} {j}) равен: {arrayFind[i, j]}");
+        Console.WriteLine($"Элемент с координатами ({i} {j}) равен: " + arrayFind[i, j]);
 }
 
 Console.Write("Ведите минимальное значение массива: ");
 int minValueArr = Convert.ToInt32(Console.ReadLine());
 Console.Write("Ведите максимальное значение массива: ");
 int maxValueArr = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Ведите координаты искомого элемента: ");
-int findPosition = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Ведите, координаты искомого элемента: ");
+double findPosition = Convert.ToDouble(Console.ReadLine());
 
 int[,] array2D = CreateArray2D(minValueArr, maxValueArr);
 PrintArray(array2D);

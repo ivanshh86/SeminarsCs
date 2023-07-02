@@ -45,7 +45,7 @@ void AverageColumn(int[,] array2d)
         }
         for (int k = 0; k < arrayAvg.Length; k++)
         {
-            arrayAvg[k] = Math.Round(sum / array2d.GetLength(0), 2);
+            arrayAvg[k] = Math.Round((sum / array2d.GetLength(0)), 2);
         }
         Console.Write(arrayAvg[j] + " ");
     }

@@ -37,7 +37,7 @@ void FindElement(int[,] arrayFind, int findPosition)
 {
     int i = findPosition / 10;
     int j = findPosition % 10;
-    if (i >= arrayFind.GetLength(0) || j >= arrayFind.GetLength(1))
+    if (i > arrayFind.GetLength(0) || j > arrayFind.GetLength(1))
         Console.WriteLine($"Элемента с координатами ({i} {j}) несуществует");
     else
         Console.WriteLine($"Элемент с координатами ({i} {j}) равен: {arrayFind[i, j]}");

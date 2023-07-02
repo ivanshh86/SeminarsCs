@@ -6,9 +6,9 @@ double[,] CreateArray2DRealNum()
     int min = Convert.ToInt32(Console.ReadLine());
     Console.Write("Введите максимальное значение массива: ");
     int max = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Введите количество строк массива: ");
+    Console.Write("Введите количество строк массива: ");
     int row = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Введите количество стлбцов массива: ");
+    Console.Write("Введите количество стлбцов массива: ");
     int column = Convert.ToInt32(Console.ReadLine());
     double[,] array2dReal = new double[row, column];
     for (int i = 0; i < array2dReal.GetLength(0); i++)

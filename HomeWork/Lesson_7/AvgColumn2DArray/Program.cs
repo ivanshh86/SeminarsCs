@@ -2,12 +2,14 @@
 
 int[,] Create2Darray()
 {
-    Console.WriteLine("Введите минимальное значение массива: ");
+    Console.Write("Введите минимальное значение массива: ");
     int minVal = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Введите максимальное значение массива: ");
+    Console.Write("Введите максимальное значение массива: ");
     int maxVal = Convert.ToInt32(Console.ReadLine());
-    int row = new Random().Next(5, 9);
-    int column = new Random().Next(5, 9);
+    Console.Write("Введите количество строк: ");
+    int row = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите количество столбцов: ");
+    int column = Convert.ToInt32(Console.ReadLine());
     int[,] array2d = new int[row, column];
     for (int i = 0; i < row; i++)
     {

@@ -28,7 +28,7 @@ void PrintArray(int[,] array2d)
             Console.Write(array2d[i, j]);
             if (i == array2d.GetLength(0) - 1 && j == array2d.GetLength(1) - 1) Console.WriteLine(".");
             else if (j == array2d.GetLength(1) - 1) Console.WriteLine(";");
-            else if (j < array2d.GetLength(1)) Console.Write(", ");
+            else Console.Write(", ");
         }
     }
 }

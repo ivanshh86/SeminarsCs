@@ -3,8 +3,8 @@
 
 int[,] CreateArray2D(int minVal, int maxVal)
 {
-    int row = new Random().Next(5, 25);
-    int column = new Random().Next(5, 25);
+    int row = new Random().Next(5, 9);
+    int column = new Random().Next(5, 9);
 
     int[,] array2d = new int[row, column];
     for (int i = 0; i < row; i++)
@@ -52,7 +52,7 @@ int findPosition = Convert.ToInt32(Console.ReadLine());
 if (findPosition < 0 || findPosition > 99)
 {
     Console.WriteLine("Ошибка!");
-    Console.WriteLine("Введите координаты искомого элемента в формате двузначного числа (xy)");
+    Console.WriteLine("Введите координаты искомого элемента в формате (xy)");
 }
 else
 {

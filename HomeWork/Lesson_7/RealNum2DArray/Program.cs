@@ -21,12 +21,15 @@ void PrintArray(double[,] array2d)
     {
         for (int j = 0; j < array2d.GetLength(1); j++)
         {
-            Console.Write(array2d[i, j] + " ");
+            Console.Write(array2d[i, j]);
+            if (i == array2d.GetLength(0) - 1 && j == array2d.GetLength(1) - 1) Console.WriteLine(".");
+            else if
+            (j == array2d.GetLength(1) - 1) Console.WriteLine(";");
+            else
+                Console.Write(", ");
         }
-        Console.WriteLine();
     }
 }
 
-double[,] array2dRealNum = CreateArray2DRealNum();
-PrintArray(array2dRealNum);
-
+    double[,] array2dRealNum = CreateArray2DRealNum();
+    PrintArray(array2dRealNum);

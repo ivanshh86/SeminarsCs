@@ -49,8 +49,14 @@ Console.Write("Ведите максимальное значение масси
 int maxValueArr = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Ведите координаты искомого элемента в формате (xy): ");
 int findPosition = Convert.ToInt32(Console.ReadLine());
-if()
-
-int[,] array2D = CreateArray2D(minValueArr, maxValueArr);
-PrintArray(array2D);
-FindElement(array2D, findPosition);
+if (findPosition < 0 || findPosition > 99)
+{
+    Console.WriteLine("Ошибка!");
+    Console.WriteLine("Введите координаты искомого элемента в формате двузначного числа (xy)");
+}
+else
+{
+    int[,] array2D = CreateArray2D(minValueArr, maxValueArr);
+    PrintArray(array2D);
+    FindElement(array2D, findPosition);
+}

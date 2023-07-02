@@ -47,8 +47,9 @@ Console.Write("Ведите минимальное значение массив
 int minValueArr = Convert.ToInt32(Console.ReadLine());
 Console.Write("Ведите максимальное значение массива: ");
 int maxValueArr = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Ведите координаты искомого элемента: ");
+Console.WriteLine("Ведите координаты искомого элемента в формате (xy): ");
 int findPosition = Convert.ToInt32(Console.ReadLine());
+if()
 
 int[,] array2D = CreateArray2D(minValueArr, maxValueArr);
 PrintArray(array2D);

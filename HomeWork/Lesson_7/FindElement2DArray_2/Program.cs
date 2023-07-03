@@ -1,17 +1,16 @@
 ﻿// Напишите программу, которая на вход принимает позиции элемента в двумерном массиве
 // и возвращает значение этого элемента или же указание, что такого элемента нет.
 
-
-
-/* TODO:
-string  
-
-
-
-int[,] CreateArray2D(int minVal, int maxVal)
+int[,] CreateArray2D()
 {
-    int row = new Random().Next(15, 25);
-    int column = new Random().Next(15, 25);
+    Console.Write("Введите количество строк массива: ");
+    int row = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите количество столбцов массива: ");
+    int column = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Ведите минимальное значение массива: ");
+    int minVal = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Ведите максимальное значение массива: ");
+    int maxVal = Convert.ToInt32(Console.ReadLine());
 
     int[,] array2d = new int[row, column];
     for (int i = 0; i < row; i++)
@@ -40,24 +39,19 @@ void PrintArray(int[,] array)
     }
 }
 
-void FindElement(int[,] arrayFind, double findPosition)
+void FindElement(int[,] arrayFind, string findPosition)
 {
-    int i = (int)findPosition;
-    double k = (findPosition - i) * 10;
-    int j = (int)k;
+    string[] coordinate = findPosition.Split(',');
+    int i = Convert.ToInt32(coordinate[0]);
+    int j = Convert.ToInt32(coordinate[1]);
     if (i >= arrayFind.GetLength(0) || j >= arrayFind.GetLength(1))
         Console.WriteLine($"Элемента с координатами ({i} {j}) несуществует");
     else
-        Console.WriteLine($"Элемент с координатами ({i} {j}) равен: " + arrayFind[i, j]);
+        Console.WriteLine($"Элемент с координатами ({i}, {j}) равен: " + arrayFind[i, j]);
 }
 
-Console.Write("Ведите минимальное значение массива: ");
-int minValueArr = Convert.ToInt32(Console.ReadLine());
-Console.Write("Ведите максимальное значение массива: ");
-int maxValueArr = Convert.ToInt32(Console.ReadLine());
+int[,] array2D = CreateArray2D();
 Console.WriteLine("Ведите, координаты искомого элемента: ");
-double findPosition = Convert.ToDouble(Console.ReadLine());
-
-int[,] array2D = CreateArray2D(minValueArr, maxValueArr);
+string findPosition = Console.ReadLine()!;
 PrintArray(array2D);
 FindElement(array2D, findPosition);

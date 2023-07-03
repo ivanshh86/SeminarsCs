@@ -6,9 +6,9 @@ int[,] Create2Darray()
     int minVal = Convert.ToInt32(Console.ReadLine());
     Console.Write("Введите максимальное значение массива: ");
     int maxVal = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Введите количество строк: ");
+    Console.Write("Введите количество строк массива: ");
     int row = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Введите количество столбцов: ");
+    Console.Write("Введите количество столбцов массива: ");
     int column = Convert.ToInt32(Console.ReadLine());
     int[,] array2d = new int[row, column];
     for (int i = 0; i < row; i++)

@@ -15,9 +15,3 @@ Console.Write("Enter number: ");
 int n = Convert.ToInt32(Console.ReadLine());
 string s = "";
 Console.WriteLine(NumRange(n, ref s));
-
-
-
-
-
-

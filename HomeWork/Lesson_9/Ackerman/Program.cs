@@ -11,5 +11,9 @@ Console.WriteLine("Enter number M: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter number N: ");
 int n = Convert.ToInt32(Console.ReadLine());
-int numAck = Ackerman(m, n);
-Console.WriteLine($"A({m}, {n}) = {numAck}");
+if (m >= 0 && n >= 0)
+{
+    int numAck = Ackerman(m, n);
+    Console.WriteLine($"A({m}, {n}) = {numAck}");
+}
+else Console.WriteLine("Entered one or more numbers - negative!");

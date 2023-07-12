@@ -10,7 +10,6 @@ string NumRange(int n, ref string s)
     if (n == 0) return s;
     return s;
 }
-
 Console.Write("Enter number: ");
 int n = Convert.ToInt32(Console.ReadLine());
 string s = "";

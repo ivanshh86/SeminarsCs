@@ -9,10 +9,9 @@ int ShowNumbers(int m, int n)
     if (n > m) return n + ShowNumbers(m, n - 1);
     return n + ShowNumbers(m, n + 1);
 }
-
 Console.WriteLine("Enter first number: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter second number: ");
 int n = Convert.ToInt32(Console.ReadLine());
 int sumNum = ShowNumbers(m, n);
-Console.WriteLine($"Sum natural numbers from {m} to {n} : {sumNum}");
+Console.WriteLine($"Sum natural numbers from {m} to {n} is {sumNum}");
